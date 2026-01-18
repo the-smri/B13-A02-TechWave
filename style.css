@@ -107,3 +107,80 @@ body {
     background: transparent;
     border-radius: 10000px;
 }
+
+/* Small Device Responsive Upto 576px */
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        margin: 12px 16px;
+        padding-bottom: 12px;
+        flex-direction: column;
+        gap: 12px;
+        max-height: none;
+    }
+
+    .nav-menu {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        height: auto;
+        padding: 80px 16px 60px;
+        text-align: center;
+    }
+
+    .hero-bg-image {
+        width: 100%;
+    }
+
+    .circle {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .microphone {
+        top: 55%;
+        width: 120px;
+    }
+
+    .hero-text {
+        margin-top: 24px;
+        padding: 0 12px;
+    }
+
+    .hero-text-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .hero-btn {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-2 {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+}
