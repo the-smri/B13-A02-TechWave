@@ -25,9 +25,13 @@ body {
 
 .navbar {
     max-width: 1600px;
-    padding: 16px 200px;
+    max-height: 92px;
+    margin: 16px 200px;
+    padding-bottom: 16px;
     display: flex;
     justify-content:space-around;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.128);
+    align-items: center;
     
 }
 
