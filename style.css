@@ -17,7 +17,6 @@
   font-weight: 400;
 }
 
-/* Usable Sample */
 body {
     background-color: var(--page-color);
     color: white;
@@ -53,4 +52,57 @@ body {
     background: var(--linear-gradient);
     border-radius: 10000px;
 
+}
+
+/* Hero Section Styles */
+
+.hero-container {
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("./assets/hero-bg.png") center / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bg-image {
+    position: relative;
+}
+
+.circle {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.microphone {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hero-text-title {
+    font-size: 48px;
+}
+
+.hero-btn{
+    margin-top: 24px;
+}
+
+.btn-2{
+    padding: 12px 16px;
+    color: green;
+    border: 2px solid green;
+    background: transparent;
+    border-radius: 10000px;
 }
