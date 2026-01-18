@@ -70,6 +70,7 @@ body {
 
 .hero-bg-image {
     position: relative;
+    margin: 0 auto;
 }
 
 
@@ -77,6 +78,7 @@ body {
     width: 100%;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .microphone {
@@ -85,6 +87,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    margin: 0 auto;
 }
 
 .hero-text {
@@ -106,6 +109,21 @@ body {
     border: 2px solid green;
     background: transparent;
     border-radius: 10000px;
+}
+
+.tooltip{
+    padding: 8px 16px;
+    color: black;
+    background:#00FF88;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    border: none;
+    border-radius: 10000px;
+    position: absolute;
+    margin-top: -520px;
+    margin-left: 70px;
+    z-index: 5;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Small Device Responsive Upto 576px */
@@ -136,24 +154,28 @@ body {
 
     /* Hero Section */
     .hero-container {
+        max-width: 576px;
         height: auto;
         padding: 80px 16px 60px;
         text-align: center;
+        justify-content: center;
     }
 
     .hero-bg-image {
         width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
     }
 
     .circle {
-        width: 100%;
-        max-width: 320px;
+        width: 70%;
         margin: 0 auto;
     }
 
     .microphone {
-        top: 55%;
-        width: 120px;
+        width: 20%;
+        top: 50%;
     }
 
     .hero-text {
@@ -183,4 +205,19 @@ body {
         padding: 10px 14px;
         font-size: 14px;
     }
+
+    .tooltip{
+    padding: 8px 10px;
+    color: black;
+    background:#00FF88;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    border: none;
+    border-radius: 10000px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 60px;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: 600;
+}
 }
