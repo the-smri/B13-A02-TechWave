@@ -124,6 +124,19 @@ body {
     z-index: 5;
     font-size: 18px;
     font-weight: 600;
+    animation: Zoompulse 1.5s ease-in-out infinite;
+}
+
+@keyframes Zoompulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* About Section Styles */
