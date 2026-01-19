@@ -232,12 +232,42 @@ body {
 }
 
 .episode1{
-    padding: 24px;
+    padding: 20px;
     border-radius: 24px;
     background: rgba(37, 13, 68, 1);
 }
 
+.host-parent{
+    width: 1200px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 40px;
+background: rgba(53, 17, 101, 0.4);
+}
 
+.host-info{
+    width: 893px;
+    margin: 0 40px 0 40px;
+}
+
+.social-icons{
+    display: flex;
+    margin-top: 12px;
+    gap: 12px;
+    justify-content:flex-start;
+    align-items: center;
+    width: 40px; height: 40px;
+}
+
+.social-icons img{
+    box-sizing: border-box;
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 3px;
+    border-radius: 50%;
+}
 
 /* Small Device Responsive Upto 576px */
 @media (max-width: 576px) {
