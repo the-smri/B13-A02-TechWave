@@ -1,6 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        margin: 12px 16px;
+        padding-bottom: 12px;
+        justify-content: flex-start;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar .btn {
+        /* padding: 10px 14px;
+        font-size: 14px; */
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        max-width: 100%;
+        height: auto;
+        padding: 80px 16px 60px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-bg-image {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .microphone {
+        width: 20%;
+        top: 50%;
+    }
+
+    .hero-text {
+        margin-top: 24px;
+        padding: 0 12px;
+    }
+
+    .hero-text-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .hero-btn {
+        margin-top: 20px;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-2 {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .tooltip{
+    padding: 8px 10px;
+    color: black;
+    background:#00FF88;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    border: none;
+    border-radius: 10000px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 60px;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Rsponsive start */
+
+  .about-info,
+  .about-description,
+  .about-stat,
+  .why-techwave,
+  .episode-container,
+  .host-parent,
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-description {
+    max-width: 320px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 12px;
+  }
+
+  .about-stat {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .stat1 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .stat1 p {
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card.tall,
+  .card-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .episode-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  .host-parent {
+    height: auto;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .host-info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .footer-container {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 16px;
+  }
+
+/* Responsive End */
+}
+
 
 /* Full CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -142,7 +325,7 @@ body {
 }
 
 /* About Section Styles */
-..about-info{
+.about-info{
     width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -156,15 +339,13 @@ body {
 }
 
 .about-description{
-    max-width: 1000px;
-    text-overflow: wrap;
-    height: 100%
+    max-width: 1200px;
+    height: 150px;
     font-size: 16px;
     font-weight: 400;
     opacity: 0.6;
-    line-height: 20px;
+    line-height: 30px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.217);
-    margin: 0 auto;
 }
 
 .about-stat{
@@ -238,7 +419,7 @@ body {
 /* Grid styles end */
 
 .episode-container{
-    max-width: 1024px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -255,8 +436,8 @@ body {
 }
 
 .host-parent{
-    width: 1024px;
-    /* height: 280px; */
+    width: 1200px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,24 +472,11 @@ margin-bottom: 100px;
 /* Footer Style Start */
 
 .footer-container{
-    background-image: url("./assets/footer-bg.png");
-    background-size: cover;         
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    min-height: 412px;
+    background-image: url(./assets/footer-bg.png);
+    width: 1600px;
+    height: 412px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-
-.footer-container h2{
-    font-size: 4rem;
-    font-weight: 700;
-}
-
 
 
 /* Footer Style End */
@@ -340,7 +508,7 @@ margin-bottom: 100px;
 
     /* Hero Section */
     .hero-container {
-        max-width: 1200px;
+        max-width: ;
         height: auto;
         padding: 80px 16px 60px;
         text-align: center;
@@ -375,7 +543,6 @@ margin-bottom: 100px;
     }
 
     .hero-text p {
-        
         font-size: 14px;
         margin-top: 8px;
     }
@@ -413,13 +580,14 @@ margin-bottom: 100px;
   .about-info,
   .about-description,
   .about-stat,
+  .why-techwave,
   .episode-container,
   .host-parent,
   .footer-container {
     width: 100%;
     max-width: 100%;
-    /* padding-left: 16px;
-    padding-right: 16px; */
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .about-title {
@@ -473,7 +641,7 @@ margin-bottom: 100px;
   .host-parent {
     height: auto;
     flex-direction: column;
-    /* padding: 12px 12px; */
+    padding: 24px 16px;
     border-radius: 24px;
     text-align: center;
   }
@@ -492,7 +660,7 @@ margin-bottom: 100px;
     height: auto;
     background-size: cover;
     background-position: center;
-    /* padding: 20px 16px; */
+    padding: 40px 16px;
   }
 
 /* Responsive End */
