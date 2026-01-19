@@ -34,7 +34,7 @@ body {
     
 }
 
-.navbar span{
+.navbar span ,.footer-container span{
     background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     background-clip: text;
@@ -246,6 +246,7 @@ body {
     margin: 0 auto;
     border-radius: 40px;
 background: rgba(53, 17, 101, 0.4);
+margin-bottom: 100px;
 }
 
 .host-info{
@@ -268,6 +269,21 @@ background: rgba(53, 17, 101, 0.4);
     padding: 3px;
     border-radius: 50%;
 }
+
+
+/* Footer Style Start */
+
+.footer-container{
+    background-image: url(./assets/footer-bg.png);
+    width: 1600px;
+    height: 412px;
+    margin: 0 auto;
+}
+
+
+/* Footer Style End */
+
+
 
 /* Small Device Responsive Upto 576px */
 @media (max-width: 576px) {
