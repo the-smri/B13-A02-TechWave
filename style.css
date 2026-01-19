@@ -302,11 +302,20 @@ margin-bottom: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .footer-container h2{
     font-size: 4rem;
     font-weight: 700;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
 }
 
 
