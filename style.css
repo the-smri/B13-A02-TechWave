@@ -274,6 +274,15 @@ body {
     /* padding: 0 1rem; */
 }
 
+.episode-info , .episode-title{
+    padding: 0.5rem;
+}
+
+.episode-time{
+    padding: 1rem 1rem 1rem 0.5rem;
+    color: #00FF88;
+}
+
 .episode-main-title{
     text-align: center;
     font-size: 3rem;
@@ -285,7 +294,8 @@ body {
 .episode1 {
     /* padding: 1.25rem; */
     border-radius: 1.5rem;
-    background: rgba(37, 13, 68, 1);
+    /* background: rgba(37, 13, 68, 1); */
+    background: #250D44;
     text-align:left;
 }
 
