@@ -407,8 +407,7 @@ body {
     }
 
     .navbar {
-        margin: 12px 16px;
-        padding-bottom: 12px;
+        margin: 0 0.8rem;
         justify-content: space-between;
     }
 
@@ -430,15 +429,15 @@ body {
     /* Hero Section */
     .hero-container {
         max-width: 1200px;
+        background-image: url(./assets/bg-image-mobile.png);
         height: auto;
-        padding: 80px 16px 60px;
+        /* padding: 0px 16px 0px; */
         text-align: center;
         justify-content: center;
     }
 
     .hero-bg-image {
-        width: 100%;
-        height: auto;
+        width: 70%;
         text-align: center;
         justify-content: center;
     }
@@ -484,7 +483,10 @@ body {
 
 .hero-container{
     position: relative;
+    height: 50vh;
 }
+
+
     .tooltip{
     padding: 0.5rem 0.625rem;
     color: black;
@@ -493,28 +495,25 @@ body {
     border: none;
     border-radius: 2rem;
     position: absolute;
-    margin-top: -360px;
-    margin-left: 60px;
+    margin-top: -340px;
+    margin-left: 50px;
     z-index: 5;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 600;
 }
 
-
-
 /* Rsponsive start */
-
   .about-info,
   .about-description,
   .about-stat,
-  .host-parent,
-  .footer-container {
+  .host-parent {
     /* min-width: 100%; */
     max-width: 1200px;
   }
 
   .about-title {
     font-size: 24px;
+    padding: 1rem 0;
   }
 
   .about-description {
@@ -558,6 +557,7 @@ body {
   .episode-container {
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin: 1rem;
   }
 
   .episode-title{
@@ -577,14 +577,24 @@ body {
   flex-direction: column;
   border-radius: 24px;
   text-align: center;
-  margin: 1rem;
+  /* margin: 1rem; */
   box-sizing: border-box;
 }
 
-
   .host-container>h2{
+    font-size: 2rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+  }
+
+  .host-image {
+        width: 50vw;
+        height: 50vw;
+        max-width: 250px;
+        max-height: 250px;
+    }
+  .host-info>h3{
+    padding-bottom: 1rem;
   }
 
   .social-icons {
@@ -595,11 +605,29 @@ body {
     text-align: center;
   }
 
-  .footer-container {
-    height: auto;
-    background-size: cover;
-    background-position: center;
+ .footer-container {
+        width: 100%;
+        min-height: 200px;
+        background-image: url("./assets/bg-footer-mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1rem;
+    }
+
+  .footer-container>h2{
+    font-size: 3rem;
   }
 
+  .footer-icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    /* align-items: left;
+    justify-content:left; */
+    margin: 1rem auto;
+}
+
+  
 /* Responsive End */
 }
