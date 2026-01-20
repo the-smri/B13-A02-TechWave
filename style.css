@@ -398,7 +398,6 @@ body {
 /* Footer Style End */
 
 
-
 /* Small Device Responsive Upto 576px */
 @media (max-width: 576px) {
 
@@ -487,7 +486,7 @@ body {
 }
 
 
-    .tooltip{
+.tooltip{
     padding: 0.5rem 0.625rem;
     color: black;
     background:#00FF88;
@@ -519,8 +518,12 @@ body {
   .about-description {
     max-width: 320px;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 1rem;
     padding-bottom: 12px;
+  }
+
+  .grid p{
+    opacity: 60%;
   }
 
   .about-stat {
@@ -567,6 +570,7 @@ body {
   .episode-info{
     font-size: 1rem;
     font-weight: 400;
+    opacity: 60%;
   }
 
 
@@ -595,6 +599,10 @@ body {
     }
   .host-info>h3{
     padding-bottom: 1rem;
+  }
+
+  .host-info p , .about-stat p{
+    opacity: 60%;
   }
 
   .social-icons {
@@ -626,8 +634,15 @@ body {
     /* align-items: left;
     justify-content:left; */
     margin: 1rem auto;
+    opacity: 60%;
+}
+
+.footer-copyw{
+    font-size: 0.8rem;
+    opacity: 60%;
 }
 
   
 /* Responsive End */
 }
+
